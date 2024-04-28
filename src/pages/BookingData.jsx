@@ -101,7 +101,7 @@ const BookingData = () => {
                 </div>
                 <p className="px-2 text-sm text-center  text-slate-600 ">
                   {" "}
-                  IR recovers only 57% of cost of travel on an average
+                  The insurance requirement is mandatory for passengers when booking tickets
                 </p>
               </div>
               <div className="bg-white w-96 h-auto my-2 rounded-lg mx-2 pb-3 ">
