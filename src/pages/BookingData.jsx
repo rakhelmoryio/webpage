@@ -12,7 +12,7 @@ const BookingData = () => {
     event.preventDefault();
     try {
       const response = await axios.get(
-        `http://localhost:3000/bookings/${bookingId}`
+        `https://server-1-wb1s.onrender.com/bookings/${bookingId}`
       );
       setBookingData(response.data);
       toast.success("Your details added succesfully");
