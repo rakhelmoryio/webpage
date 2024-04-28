@@ -86,7 +86,7 @@ const BookingForm = () => {
     event.preventDefault();
     try {
       const dataToSave = { ...formData, passengers };
-      const response = await axios.post("http://localhost:3000/bookings", dataToSave);
+      const response = await axios.post("https://server-1-wb1s.onrender.com/bookings", dataToSave);
       toast.success("Your details added succesfully",response);
       
       setFormData({
