@@ -10,7 +10,7 @@ const BookingUpdate = () => {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `https://server-1-wb1s.onrender.com/update/${bookingId}`
+        `https://server-1-wb1s.onrender.com/auth12/update/${bookingId}`
       );
       setBookingData(response.data);
       console.log(response.data);
@@ -30,7 +30,7 @@ const BookingUpdate = () => {
 
   const handleUpdate = async (e) => {
     try {
-      await axios.put(`https://server-1-wb1s.onrender.com/update/${bookingId}`, updatedData);
+      await axios.put(`https://server-1-wb1s.onrender.com/auth12/update/${bookingId}`, updatedData);
       toast.success("Booking ID updated successfully");
       // Optionally, you can fetch the updated data again to reflect changes in the UI
       handleSearch();
